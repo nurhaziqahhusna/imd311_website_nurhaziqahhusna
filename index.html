@@ -1,0 +1,142 @@
+<html>
+    <head>
+        <title>Homepage</title>
+        <link rel="icon" type="gallery/x-icon" href="gallery/logo.png">
+    </head>
+    <body>
+        <div class="animated-intro">
+            <span class="logo" width="100px" height="100px"></span>
+        </div>
+        <p>
+            <link rel="stylesheet" href="css/style.css">
+        </p>
+        <style>
+            body{
+                background-image: url(https://marketplace.canva.com/EAFE_lEoq_c/1/0/1600w/canva-green-natural-flower-and-leaf-desktop-wallpaper-HC7COnkEkpk.jpg);
+            }
+            .icon-bar {
+                background-color: #BDCB9C;
+            }
+            
+            .icon-bar a {
+                color: aliceblue;
+            }
+
+            .icon-bar a:hover {
+                background-color: #D8E1C2;
+            }
+
+            .active {
+                background-color: beige;
+            }
+            
+            .button1 {
+                background-color: #abc09b;
+            }
+
+            img {
+                border-radius: 10%;
+            }
+
+            .animated-intro {
+                position: fixed;
+                z-index: 1000;
+                height: 100vh;
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.295);
+                animation: intro 2s 2s forwards;
+                -webkit-animation: intro 2s 2s forwards;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+                }
+
+            .logo {
+                background-image: url("./gallery/hey.gif");
+                background-repeat: no-repeat;
+                background-position: center;
+                width: 1000px;
+                height: 1500px;
+                animation: imgLogo 2s 1s forwards;
+                -webkit-animation: imgLogo 2s 1s forwards;
+                }
+
+            @keyframes imgLogo {
+                0% {opacity: 1;}
+                100% {opacity: 0;}
+                }
+
+            @keyframes intro {
+                0% {width: 100%;}
+                50% {width: 100%; background-color: rgb(0, 0, 0, 0.0);}
+                100% {width: 0; background-color: rgb(0, 0, 0, 0.0)}
+                }
+        </style>    
+        <h1 style="border-radius: 25px; border: 4px solid #536d2e; padding: 5px;">
+            <span id="time"></span> 
+            <span id="day"></span>
+            <script>
+                function time(){
+                var date = new Date();    
+                var time = date.toLocaleTimeString();
+                var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                var day = date.toLocaleDateString('en-MY',options);
+                document.getElementById('time').innerHTML = time;
+                document.getElementById('day').innerHTML = day;
+                }
+                setInterval(function(){
+                time();
+                },1000);
+            </script>
+        </h1>
+        <div class="icon-bar">
+            <a href="biodata_ziqa.html" target="_blank"><img src="gallery/biodata_button.png"></a>
+            <a href="hobby_ziqa.html" target="_blank"><img src="gallery/hobby_button.png"></a>
+            <a href="education_ziqa.html" target="_blank"><img src="gallery/education_button.png"></a>
+            <a href="family_ziqa.html" target="_blank"><img src="gallery/family_button.png"></a>
+            <a href="gallery_ziqa.html" target="_blank"><img src="gallery/gallery_button.png"></a>
+        </div>
+        <br>
+        <a href="gallery/paw.gif" target="_blank"><img src="gallery/paw_resize.gif"></a>
+        <br>
+            <marquee behavior="slide" direction="up"><center><font color="#527350"><h1>&#x2661 Welcome To My Website &#x2661</h1></font></center></marquee>
+            <marquee behavior="scroll" direction="left"><font color="#534506"><h2> &#10048 <i>Assalamualaikum and hi everyone, this is my Homepage</i> &#10048 </h2></font></marquee>
+            <a href="gallery/imgziqagreen.jpg" target="_blank"><img src="gallery/imgziqagreen_resize.jpg" align="center"></a>
+        <p>    
+            <marquee behavior="slide" direction="up"><center><b>Hello lovelies! ♡</b></center></marquee>
+        </p>
+        <br>
+        <p>
+            <marquee behavior="slide" direction="up"><center><b>My name is Nurhaziqah Husna, my student ID is 2020848392</b></center></marquee>
+        </p>
+        <p>
+            <marquee behavior="slide" direction="up"><center><b>and i am from class N5IM1105C. I would like to welcome you</b></center></marquee>
+        </p>
+        <p>
+            <marquee behavior="slide" direction="up"><center><b>to my website. On this website, you will find more information</b></center></marquee>
+        </p>
+        <p>
+            <marquee behavior="slide" direction="up"><center><b>about myself, including my hobbies, education, and family.</b></center></marquee>
+        </p>
+        <p>
+            <marquee behavior="slide" direction="up"><center><b>If you are interested in knowing more about who I am, you can</b></center></marquee>
+        </p>
+        <p>
+            <marquee behavior="slide" direction="up"><center><b>find it by clicking the button at the top of this website.</b></center></marquee>
+        </p>
+        <br>
+        <p>
+            <marquee behavior="slide" direction="up"><center><b>Thank you! Hope you guys have a nice day ahead &#x2661</b></center></marquee>
+        </p>
+        <hr>
+        <audio controls>
+            <source src="audio/song.mp3" type="audio/ogg">
+        </audio>
+        <br>
+        <b>For best experience, please play the music on every page &#x1F600;</b>
+        <p>
+            <a href="index.html"><button class="button button1" >Back to Top</button></a> 
+        </p>
+    </body>
+</html>

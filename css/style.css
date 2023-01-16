@@ -1,0 +1,133 @@
+body {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-family: cursive;
+}
+
+p {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+}
+
+.icon-bar {
+    width: 100%;
+    overflow: auto;
+}
+
+.icon-bar a {
+    float: left;
+    width: 18%;
+    text-align: center;
+    padding: 13px;
+    transition: all 0.3s ease;
+    font-size: 36px;
+    margin: 0px;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.socialLink {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialLink :hover {
+    filter: drop-shadow(0px 0px 20px #bd4f8f);
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+table, th, td {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: center;
+}
+
+td {
+  text-align: center;
+}
+
+th, td {
+  padding: 20px;
+}
+
+.card {
+  width: 250px;
+  height: 320px;
+  display: inline-table;
+  padding: 150px 200px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 30px 17px;
+  background-position: center;
+  background-size: cover;
+  border-color: #000000;
+  box-shadow: 0 5px 9px 0 #00000033, 0 6px 20px 0 #00000030;
+  transition: transform 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+}
+
+.animated-intro {
+  position: fixed;
+  z-index: 1000;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.295);
+  animation: intro 2s 2s forwards;
+  -webkit-animation: intro 2s 2s forwards;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  }
+
+.logo {
+  background-image: url("./gallery/hey.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 1000px;
+  height: 1500px;
+  animation: imgLogo 2s 1s forwards;
+  -webkit-animation: imgLogo 2s 1s forwards;
+  }
+
+@keyframes imgLogo {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+  }
+
+@keyframes intro {
+  0% {width: 100%;}
+  50% {width: 100%; background-color: rgb(0, 0, 0, 0.0);}
+  100% {width: 0; background-color: rgb(0, 0, 0, 0.0)}
+  }
